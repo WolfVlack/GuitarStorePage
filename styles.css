@@ -1,0 +1,210 @@
+/* ||=========================Imported Fonts=========================|| */
+
+/* Akwe Pro */
+@import url(https://db.onlinewebfonts.com/c/ac0e2a52cde91599db7740be8cac996a?family=Akwe+Pro+ExtraBold+Italic); 
+@font-face {
+    font-family: "Akwe Pro ExtraBold Italic";
+    src: url("https://db.onlinewebfonts.com/t/ac0e2a52cde91599db7740be8cac996a.eot");
+    src: url("https://db.onlinewebfonts.com/t/ac0e2a52cde91599db7740be8cac996a.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/ac0e2a52cde91599db7740be8cac996a.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/ac0e2a52cde91599db7740be8cac996a.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/ac0e2a52cde91599db7740be8cac996a.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/ac0e2a52cde91599db7740be8cac996a.svg#Akwe Pro ExtraBold Italic")format("svg");
+}
+
+.logo, .welcome, .menu, .top-sellers{
+    font-family: "Akwe Pro ExtraBold Italic"; 
+}
+
+.welcome, .menu, .top-sellers{
+    text-decoration: underline;
+    text-decoration-thickness: 11px;
+    text-decoration-color: var(--cyan);
+    text-decoration-skip-ink: none;
+}
+
+:root{
+/* ||=========================Colors=========================|| */
+
+    --red: #e22c3c;                
+    --red-orange: #e9404b;         
+    --orange: #ee6748;             
+    --amber: #fa9f50;              
+    --yellow: #ffd85e;             
+    --lime: #97e768;               
+    --mint: #52eea3;               
+    --cyan: #51e1e9;               
+    --cool-cyan: #43cfea;          
+    --light-blue: #54b6f8;         
+    --blue: #437cf3;               
+    --blue-violet: #6f51f4;        
+    --violet: #9446f8;             
+    --purple: #c952ed;             
+    --magenta: #e54f9b;            
+    --hot-red: #e3365e;            
+    --red: #dd1212;                
+    --cool-gray: #515768; 
+    --aliceblue: #f0f8ff;
+    --light-gray: #F3F3F3;
+    --black: #000000;         
+
+
+/* ||=========================Color Presets=========================|| */
+
+    --root-color: var(--aliceblue);
+    --secondary-color: var(--light-gray)
+}
+
+*{
+    margin:0;
+}
+
+body{
+    margin:0;
+}
+
+/* ||========================= Header =========================|| */
+
+header{
+    display: block;
+    text-align: center;
+    background-color: var(--secondary-color);
+}
+
+.logo{
+    font-size: 60px;
+}
+
+.logocolor{
+    color: var(--cyan)
+}
+
+.searchbar{
+    border-radius: 100px;
+    width: 500px;
+    height: 35px;
+    margin: 10px 0 25px 0;
+}
+
+.searchbar::placeholder {
+    font-size: 20px;
+    text-align: center;
+    background-color: white;
+    background-image: url('./src/images/icons8-search-24.png'); /*https://icons8.com/icons/set/search*/
+    background-position: 10px 7px; 
+    background-repeat: no-repeat;
+  }
+
+.welcome{
+    text-align: center;
+    padding: 20px;
+}
+
+.firstimage{
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* ||========================= Instruments Menu =========================|| */
+main{
+    margin: 0 100px 0 100px;
+}
+
+.menu{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 20px;
+    justify-content: center;
+    
+    
+}
+
+.container > a {
+    z-index: 1;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: left;
+
+    width: 500px;
+    color: var(--black);
+    text-decoration: none;
+    margin: 3px;
+    margin-right: 20px;
+    border-bottom: 3px solid ;
+    border-color: var(--light-gray);
+    /*background-color: #437cf3;**/
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.container > a:hover{
+    color: #c952ed;
+}
+
+a > .title {
+    padding-top: 50px;
+}
+
+a > .image{
+    z-index: 0;
+    width: 150px;
+    display: block;
+    position: left;
+}
+
+.image > picture > img{
+    width: 124px;
+    height: 124px;
+}
+
+/* ||========================= Top Sellers =========================|| */
+
+.top-sellers{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.sellers{
+    margin: 100px;
+}
+
+.cont1{
+    height: 400px;
+    width: 400px;
+    background-color: var(--light-gray);
+    
+}
+
+.item1{
+    mix-blend-mode: multiply;
+    margin-top: -50px;
+    margin-left: -25px;
+}
+
+.item2{
+    mix-blend-mode: multiply;
+    margin-top: 10px;
+    margin-left: 5px;
+    height: 390px;
+    width: 390px;
+}
+
+.cont2{
+    height: 400px;
+    width: 400px;
+    margin-top: -400px;
+    margin-left: 500px;
+    background-color: var(--light-gray);
+}
