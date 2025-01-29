@@ -177,6 +177,9 @@ a > .image{
 }
 
 .sellers{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     margin: 100px;
 }
 
@@ -195,8 +198,6 @@ a > .image{
 
 .item2{
     mix-blend-mode: multiply;
-    margin-top: 10px;
-    margin-left: 5px;
     height: 390px;
     width: 390px;
 }
@@ -204,7 +205,5 @@ a > .image{
 .cont2{
     height: 400px;
     width: 400px;
-    margin-top: -400px;
-    margin-left: 500px;
     background-color: var(--light-gray);
 }
