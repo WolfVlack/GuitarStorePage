@@ -12,11 +12,11 @@
     url("https://db.onlinewebfonts.com/t/ac0e2a52cde91599db7740be8cac996a.svg#Akwe Pro ExtraBold Italic")format("svg");
 }
 
-.logo, .welcome, .menu, .top-sellers{
+.logo, .welcome, .menu, .top-sellers, .top-rated{
     font-family: "Akwe Pro ExtraBold Italic"; 
 }
 
-.welcome, .menu, .top-sellers{
+.welcome, .menu, .top-sellers, .top-rated{
     text-decoration: underline;
     text-decoration-thickness: 11px;
     text-decoration-color: var(--cyan);
@@ -33,7 +33,7 @@
     --yellow: #ffd85e;             
     --lime: #97e768;               
     --mint: #52eea3;               
-    --cyan: #51e1e9;               
+    --cyan: #51E1E9;          
     --cool-cyan: #43cfea;          
     --light-blue: #54b6f8;         
     --blue: #437cf3;               
@@ -133,6 +133,39 @@ input:focus::placeholder {
     border-radius: 10px;
 }
 
+.nav{
+    margin-top: -80px;
+    margin-right: 500px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 10px;
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    transition: filter 0.3s ease;
+}
+
+.icon:hover{
+    filter: brightness(0) saturate(100%) invert(78%) sepia(8%) saturate(7488%) hue-rotate(137deg) brightness(101%) contrast(101%);
+}
+
+.naavitem{
+    display: inline-block;
+    padding: 2px;
+    text-align: center;
+}
+
+.navitem{
+    padding: 0px 20px 0px 20px;
+    text-decoration: none;
+    color: var(--aliceblue);
+    font-size: 20px;
+}
+
 /* ||========================= Instruments Menu =========================|| */
 main{
     margin: 0 100px 0 100px;
@@ -186,7 +219,7 @@ a > .image{
     width: 150px;
     display: block;
     position: left;
-}
+    }
 
 .image > picture > img{
     width: 124px;
@@ -209,11 +242,33 @@ a > .image{
     margin: 100px;
 }
 
+.top-rated{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.sellers{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 80px;
+    margin: 100px;
+}
+
 .cont{
     height: 300px;
     width: 300px;
     background-color: var(--light-gray);
     
+}
+
+#item{
+    transition: transform 0.3s ease;
+}
+
+#item:hover {
+    transform: scale(1.05);
 }
 
 .item1{
@@ -246,4 +301,36 @@ a > .image{
     mix-blend-mode: multiply;
     height: 295px;
     width: 295px;
+}
+
+.item6{
+    mix-blend-mode: multiply;
+    height: 292px;
+    width: 292px;
+}
+.item7{
+    mix-blend-mode: multiply;
+    padding-top: 7px;
+    height: 290px;
+    width: 290px;
+}.item8{
+    mix-blend-mode: multiply;
+    padding-left: 6px;
+    padding-top: 12px;
+    height: 285px;
+    width: px;
+}.item9{
+    mix-blend-mode: multiply;
+    padding-left: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    height: 270px;
+    width: px;
+}.item10{
+    mix-blend-mode: multiply;
+    padding-left: 10px;
+    padding-top: 12px;
+    padding-bottom: 2px;
+    height: 280px;
+    width: 280px;
 }
