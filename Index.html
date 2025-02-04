@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://db.onlinewebfonts.com/c/ac0e2a52cde91599db7740be8cac996a?family=Akwe+Pro+ExtraBold+Italic" rel="stylesheet"> 
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="carrito.js"></script>
     <title>MusicMix</title>
 </head>
 <body>
@@ -16,12 +17,12 @@
         <input class="searchbar" type="text" placeholder="Search..">
         </div>
         <div class="nav">
-            <img class="icon" id="cart" src="https://img.icons8.com/?size=80&id=QVQY51sDgy1I&format=png">
+            <img class="icon" id="cartIcon" src="https://img.icons8.com/?size=80&id=QVQY51sDgy1I&format=png">
             <img class="icon" src="https://img.icons8.com/?size=24&id=85147&format=png">
             <img class="icon" src="https://img.icons8.com/?size=50&id=87&format=png">
         </div>
         </header>
-
+        
         <div class="naavitem">
             <a class="navitem" href="http://">Guitarras/Bajos</a>
             <a class="navitem" href="http://">Baterias</a>
@@ -121,6 +122,22 @@
             <div class="title">Cables y Conectores</div>
         </a>
         </div>
+
+        <!-- Ventana del carrito de compras -->
+        <div id="cartContainer" class="cart-container">
+            <div class="cart-header">
+                <h2>Tu Carrito</h2>
+                <button id="closeCartBtn">Cerrar</button> <!-- Botón para cerrar el carrito -->
+                <button id="clearCartBtn">Vaciar Carrito</button>
+            </div>
+            <div id="cartItems" class="cart-items">
+                <!-- Aquí se añadirán los productos -->
+            </div>
+            <div class="cart-footer">
+                <button id="checkoutBtn">Finalizar Compra</button>
+            </div>
+        </div>
+
         
         
 
