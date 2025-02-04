@@ -61,6 +61,7 @@
 
 body{
     margin:0;
+    overflow-x: hidden;
 }
 
 /* ||========================= Header =========================|| */
@@ -333,4 +334,84 @@ a > .image{
     padding-bottom: 2px;
     height: 280px;
     width: 280px;
+}
+
+/* ==================== Carrito ==================== */
+
+/* Estilo para la ventana del carrito */
+.cart-container {
+    position: fixed;
+    top: 0;
+    right: -700px; /* Comienza fuera de la pantalla */
+    width: 600px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out; /* Transición suave para el efecto */
+    padding: 20px;
+    z-index: 1000;
+}
+
+/* Cabecera del carrito */
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-header button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#closeCartBtn {
+    padding: 8px 12px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#closeCartBtn:hover {
+    background-color: #e53935;
+}
+
+/* Estilo de los elementos del carrito */
+.cart-items {
+    margin-top: 20px;
+}
+
+/* Estilo del footer */
+.cart-footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cart-footer button {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.quantity-controls {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-controls button {
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.quantity-controls span {
+    font-size: 18px;
+    font-weight: bold;
 }
