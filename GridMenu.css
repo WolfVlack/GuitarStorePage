@@ -1,0 +1,104 @@
+:root{
+    /* ||=========================Colors=========================|| */
+    
+        --red: #e22c3c;                
+        --red-orange: #e9404b;         
+        --orange: #ee6748;             
+        --amber: #fa9f50;              
+        --yellow: #ffd85e;             
+        --lime: #97e768;               
+        --mint: #52eea3;               
+        --cyan: #51E1E9;          
+        --cool-cyan: #43cfea;          
+        --light-blue: #54b6f8;         
+        --blue: #437cf3;               
+        --blue-violet: #6f51f4;        
+        --violet: #9446f8;             
+        --purple: #c952ed;             
+        --magenta: #e54f9b;            
+        --hot-red: #e3365e;            
+        --red: #dd1212;                
+        --cool-gray: #515768; 
+        --aliceblue: #f0f8ff;
+        --light-gray: #F3F3F3;
+        --black: #000000; 
+        --pastel-cyan: #6EC5C1;        
+    
+    
+    /* ||=========================Color Presets=========================|| */
+    
+        --root-color: var(--aliceblue);
+        --secondary-color: var(--light-gray)
+    }
+
+
+    .logo, .welcome, .menu, .top-sellers, .top-rated{
+        font-family: "Akwe Pro ExtraBold Italic"; 
+    }
+    
+    .welcome, .menu, .top-sellers, .top-rated{
+        text-decoration: underline;
+        text-decoration-thickness: 11px;
+        text-decoration-color: var(--cyan);
+        text-decoration-skip-ink: none;
+    }
+
+/* ||========================= Instruments Menu =========================|| */
+main{
+    margin: 0 100px 0 100px;
+}
+
+.menu{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 20px;
+    justify-content: center;
+    
+    
+}
+
+.container > a {
+    z-index: 1;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+     
+
+    width: 500px;
+    color: var(--black);
+    text-decoration: none;
+    margin: 3px;
+    margin-right: 20px;
+    border-bottom: 3px solid ;
+    border-color: var(--light-gray);
+    /*background-color: #437cf3;**/
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.container > a:hover{
+    color: #c952ed;
+}
+
+a > .title {
+    padding-top: 50px;
+}
+
+a > .image{
+    z-index: 0;
+    width: 150px;
+    display: block;
+    position: left;
+    }
+
+.image > picture > img{
+    width: 124px;
+    height: 124px;
+}

@@ -1,0 +1,133 @@
+/* ==================== Carrito ==================== */
+
+/* Estilo para la ventana del carrito */
+.cart-container {
+    position: fixed;
+    top: 0;
+    right: -700px; /* Comienza fuera de la pantalla */
+    width: 600px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out; /* Transición suave para el efecto */
+    padding: 20px;
+    z-index: 1000;
+}
+
+/* Cabecera del carrito */
+.cart-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--pastel-cyan);
+        padding: 0;
+        position: relative;
+        margin: -20px -20px 20px -20px; /* Ajusta el margen para compensar el padding del contenedor */
+}
+
+
+.cart-header h2 {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+.cart-header button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#closeCartBtn {
+    padding: 8px 12px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#closeCartBtn:hover {
+    background-color: darkblue;
+}
+
+/* Estilo de los elementos del carrito */
+.cart-items {
+    margin-top: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Estilo del footer */
+.cart-footer {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.totalPrice {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cart-footer button {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* items dentro del carrito */
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.quantity-controls button {
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.quantity-controls span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cartProductImage {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.cartProductName {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.cartProductPrice {
+    margin-right: 10px;
+}
+
+.removeBTN{
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+}
