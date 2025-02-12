@@ -147,3 +147,73 @@ a > .image{
 .container-guitar .title {
     margin-top: -60px;
 }
+
+
+/* ||========================= Items Display =========================|| */
+
+.item-display{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--light-gray);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateX(10%);
+}
+
+.link-guitar{
+    text-decoration: none;
+    color: var(--black);
+    display: flex;
+    align-items: top;
+    padding: 2px;
+    font-size: 30px;
+    text-align: left;
+    
+}
+
+.image-guitar {
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+
+.image-guitar img {
+    width: 200px;
+    height: 200px;
+
+}
+
+.link-guitar .title {
+    margin-top: -50px;
+    font-weight: bold;
+}
+
+.link-guitar .title span {
+    margin-left: 7px;
+    margin-top: -50px;
+    font-weight:normal;
+}
+
+.price {
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.cart-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 35px;
+    height: 35px;
+}
