@@ -77,6 +77,16 @@ document.addEventListener('DOMContentLoaded', () => {
         updateCartUI(); // Actualiza el carrito con el nuevo item
     }
 
+    // Manejar el evento de clic en el icono del carrito
+    document.querySelectorAll('.cart-icone').forEach(icon => {
+        icon.addEventListener('click', (event) => {
+            const img = event.currentTarget.dataset.img;
+            const name = event.currentTarget.dataset.name;
+            const price = parseFloat(event.currentTarget.dataset.price);
+            addItemToCart(img, name, price);
+        });
+    });
+
     // Agregar algunos productos de ejemplo al carrito (esto lo debes adaptar a tu sistema de productos)
     addItemToCart('https://thumbs.static-thomann.de/thumb/thumb248x248/pics/prod/233185.webp', 'Guitarra Ejemplo', 300);
     addItemToCart('https://thumbs.static-thomann.de/thumb/thumb248x248/pics/prod/570927.webp', 'Batería Ejemplo', 500);
